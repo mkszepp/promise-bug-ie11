@@ -1,7 +1,11 @@
 {{page-title "PromiseBug"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<button type="button" {{on "click" this.toggleInput}}>Toggle input</button>
+
+<br /><br />
+
+{{#if this.showInput}}
+	<Input />
+{{/if}}
 
 {{outlet}}
